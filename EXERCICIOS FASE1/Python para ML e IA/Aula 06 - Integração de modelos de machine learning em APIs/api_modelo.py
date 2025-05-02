@@ -127,6 +127,11 @@ def predict():
     })
 
 
+@app.route("/favicon.ico")
+def favicon():
+    return "", 204
+
+
 @app.route("/predictions", methods=["GET"])
 @token_required
 def get_predictions():
