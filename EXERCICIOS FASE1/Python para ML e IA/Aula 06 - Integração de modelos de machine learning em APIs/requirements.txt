@@ -3,3 +3,4 @@ joblib==1.2.0
 numpy>=1.26.0
 SQLAlchemy==1.4.44
 PyJWT==2.8.0
+Werkzeug==2.2.3
