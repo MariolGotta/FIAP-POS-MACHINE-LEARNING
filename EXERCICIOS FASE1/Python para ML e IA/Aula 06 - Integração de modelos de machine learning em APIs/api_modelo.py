@@ -120,7 +120,7 @@ def predict():
         predicted_class=predicted_class)
     db.add(new_pred)
     db.commit()
-    db.close
+    db.close()
     return jsonify({
         "predicted_class": predicted_class,
         "predicted_species": species
@@ -156,7 +156,3 @@ def get_predictions():
             "created_at": p.created_at.isoformat()
         })
     return jsonify(results)
-
-
-if __name__ == "__main__":
-    app.run(debug=True)
