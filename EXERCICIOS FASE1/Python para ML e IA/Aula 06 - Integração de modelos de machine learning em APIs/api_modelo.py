@@ -161,3 +161,7 @@ def get_predictions():
             "created_at": p.created_at.isoformat()
         })
     return jsonify(results)
+
+
+if __name__ == "__main__":
+    app.run()
