@@ -1,16 +1,16 @@
 {
-    "version":2,
-    "builds":[
-        {
-            "src": "api_modelo.py",
-            "use": "@vercel/python",
-            "config": {"pythonVersion": "3.10"}
+    "builds": [
+      {
+        "src": "api/index.py",
+        "use": "@vercel/python",
+        "config": {
+          "maxLambdaSize": "50mb",
+          "runtime": "python3.12"
         }
+      }
     ],
     "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "api_modelo.py"        
-        }
+      { "src": "/(.*)", "dest": "api/index.py" }
     ]
-}
+  }
+  
