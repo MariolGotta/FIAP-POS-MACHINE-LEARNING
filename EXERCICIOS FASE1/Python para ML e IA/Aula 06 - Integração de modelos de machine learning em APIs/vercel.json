@@ -7,7 +7,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "api_modelo.py"
+      "dest": "api_modelo.p"
     }
   ]
 }
