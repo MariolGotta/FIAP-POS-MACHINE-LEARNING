@@ -1,7 +1,8 @@
-SQLAlchemy==2.0.29
-setuptools>=65.5.0
-Flask==2.3.3
-numpy==1.26.4
-pandas==2.2.2
-PyJWT==2.8.0
-joblib==1.4.0
+SQLAlchemy
+setuptools
+Flask
+numpy
+pandas
+PyJWT
+joblib
+flasgger
